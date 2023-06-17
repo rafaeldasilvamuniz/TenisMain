@@ -25,11 +25,11 @@ body {
 	padding: 10px;
 }
 
-#area-principal {
+/*#area-principal {
 	width: 920px;
 	margin: 0 auto;
 	padding: 15px;
-}
+}*/
 
 
 #area-rodape {
@@ -54,6 +54,7 @@ footer p {
 #area-postagens {
 	width: 660px;
 	float: left;
+	text-align: center;
 }
 
 #area-lateral {
@@ -65,6 +66,9 @@ footer p {
 	background: white;
 	padding:10px;
 	margin-bottom: 20px;
+	display: flex;
+	/*flex-direction: column;*/
+	
 	
 }
 
@@ -73,6 +77,7 @@ footer p {
 	padding: 5px;
 	border-bottom: 1px dotted #CCC;	
 	/*display: flex;*/
+	flex-direction: column;
 }
 
 button{
@@ -80,9 +85,10 @@ button{
     border: none;
     cursor: pointer;
     font-weight: bold;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     color: #fff;
-	padding: 10px 70px;
+	padding: 10px 10px;
+	vertical-align:text-bottom;
 	
 }
 
@@ -153,10 +159,10 @@ h3 {
 	color: white;
 }
 
-#nome, #email, #cel,#area{
+/*#nome, #email, #cel,#area{
 	/*padding: 10px;*/
-	width: 650px;
-}
+	/*width: 650px;
+}*/
 
 
 .data-postagem {
@@ -167,27 +173,34 @@ h3 {
 	display: block;
 }
 
+img{
+	justify-content: center;
+	max-width: 100%;
+	margin-left: auto;
+    margin-right: auto ;
+}
+
 @media screen and (min-width:641px) and (max-width: 1023px) {
-	.area-principal .area-lateral .conteudo-vertical .postagem-vertical .area-postagens{
-		max-width: 82%;
+	#tn1,#buton1,#tn2,#buton2,#tn3,#buton3,#tn4,#buton4,.conteudo-vertical,.postagem-vertical,.postagem,#vit,#cal{
+		max-width: 80%;
 		display: block;
 	}
 	
 }
 
 @media screen and (max-width: 640px) {
-	.area-principal .area-lateral .conteudo-vertical .postagem-vertical .area-postagens{
-		max-width: 82%;
+	#tn1,#buton1,#tn2,#buton2,#tn3,#buton3,#tn4,#buton4,.conteudo-vertical,.postagem-vertical,.postagem,#vit,#cal{
+		max-width: 80%;
 		display: block;
 	}
 }
 
-@media screen and (min-width:1024px) {
-	.area-principal .area-lateral .conteudo-vertical .postagem-vertical .area-postagens{
+/*@media screen and (min-width:1024px) {
+	#tn1,#buton1,#tn2,#buton2,#tn3,#buton3,#tn4,#buton4,.conteudo-vertical,.postagem-vertical{
 		max-width: 82%;
 		display: block;
 	}
-}
+}*/
 
 
 
